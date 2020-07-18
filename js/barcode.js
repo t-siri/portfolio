@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-    $("#header").scroll(function(){
+    $("#header").click(function(){
     
     $("#barcodeContainer").addClass("active");    
 
