@@ -1,0 +1,401 @@
+html{
+    font-family: Tahoma, Century, Helvetica, sans-serif; 
+
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: -2000;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  opacity: .8;
+}
+
+body {
+    background: ;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/*INDEX PAGE/SPLASH*/
+	.outerIndex {
+	    display: table;
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+	}
+
+	.middleIndex {
+	    display: table-cell;
+	    vertical-align: middle;
+	}
+
+	.innerIndex {
+	    margin-left: auto;
+	    margin-right: auto; 
+	    width: 400px;
+	}
+	nav{
+		display: none!important;
+	}
+    #nameSplash2{
+    	display:none!important;
+    }
+	#barcodeContainer{
+		height: 350px;
+		width: 400px;
+		position: absolute;
+		background: ;
+		margin-top: -10%;
+	}
+	#barcodeContainer:hover{
+		cursor: pointer;
+		opacity: .8;
+    	transition: color, .3s, linear;
+	}
+	#barcodeContainer.active:hover{
+		cursor: default;
+		opacity: 1;
+	}
+
+	#barcode1{
+		height: 250px;
+		width: 13px;
+		position: absolute;
+		background: black;
+	}
+	#barcode2{
+		height: 250px;
+		width: 30px;
+		position: absolute;
+		background: black;
+		margin-left: 18px;
+		margin-right: 20px;
+	}
+	#barcode3{
+		height: 250px;
+		width: 7px;
+		position: absolute;
+		background: black;
+		margin-left: 50px;
+		margin-right: 20px;
+	}
+	#barcode4{
+		height: 250px;
+		width: 5px;
+		position: absolute;
+		background: black;
+		margin-left: 65px;
+		margin-right: 20px;
+	}
+	#barcode5{
+		height: 250px;
+		width: 10px;
+		position: absolute;
+		background: black;
+		margin-left: 75px;
+		margin-right: 20px;
+	}
+	#barcode6{
+		height: 250px;
+		width: 40px;
+		position: absolute;
+		background: black;
+		margin-left: 80px;
+		margin-right: 20px;
+	}
+	#barcode7{
+		height: 250px;
+		width: 30px;
+		position: absolute;
+		background: black;
+		margin-left: 130px;
+		margin-right: 20px;
+	}
+	#barcode8{
+		height: 250px;
+		width: 5px;
+		position: absolute;
+		background: black;
+		margin-left: 163px;
+		margin-right: 20px;
+	}
+	#barcode9{
+		height: 250px;
+		width: 10px;
+		position: absolute;
+		background: black;
+		margin-left: 175px;
+		margin-right: 20px;
+	}
+	#barcode10{
+		height: 250px;
+		width: 40px;
+		position: absolute;
+		background: black;
+		margin-left: 190px;
+		margin-right: 20px;
+	}
+	#barcode11{
+		height: 250px;
+		width: 10px;
+		position: absolute;
+		background: black;
+		margin-left: 240px;
+		margin-right: 20px;
+	}
+	#barcode12{
+		height: 250px;
+		width: 5px;
+		position: absolute;
+		background: black;
+		margin-left: 253px;
+		margin-right: 20px;
+	}
+	#barcode13{
+		height: 250px;
+		width: 20px;
+		position: absolute;
+		background: black;
+		margin-left: 260px;
+		margin-right: 20px;
+	}
+	#barcode14{
+		height: 250px;
+		width: 5px;
+		position: absolute;
+		background: black;
+		margin-left: 290px;
+		margin-right: 20px;
+	}
+	#barcode15{
+		height: 250px;
+		width: 25px;
+		position: absolute;
+		background: black;
+		margin-left: 298px;
+		margin-right: 20px;
+	}
+	#barcode16{
+		height: 250px;
+		width: 3px;
+		position: absolute;
+		background: black;
+		margin-left: 325px;
+		margin-right: 20px;
+	}
+	#barcode17{
+		height: 250px;
+		width: 5px;
+		position: absolute;
+		background: black;
+		margin-left: 330px;
+		margin-right: 20px;
+	}
+	#barcode18{
+		height: 250px;
+		width: 8px;
+		position: absolute;
+		background: black;
+		margin-left: 345px;
+		margin-right: 20px;
+	}
+	#barcode19{
+		height: 250px;
+		width: 25px;
+		position: absolute;
+		background: black;
+		margin-left: 355px;
+		margin-right: 20px;
+	}
+	#barcode20{
+		height: 250px;
+		width: 13px;
+		position: absolute;
+		background: black;
+		margin-left: 387px;
+		margin-right: 20px;
+	}
+	#nameSplash{
+		height: auto;
+		width: 400px;
+		position: relative;
+		text-align: center;
+		letter-spacing: 10px;
+		margin-top: 30%;
+		margin-left: 4%;
+		color: #fff;
+	}#nameSplash:visited{
+		color:#44b2ce;
+	}
+
+	#nameSplash2{
+		height: auto;
+		width: 400px;
+		position: relative;
+		text-align: center;
+		letter-spacing: 10px;
+		margin-top: 30%;
+		margin-left: 4%;
+		color: #fff;
+	}#nameSplash2:visited{
+		color:#44b2ce;
+	}
+
+
+	#illustration{
+		width: auto;
+		position: absolute;
+		height: 300px;
+	}
+	#illustration:hover{
+		color: #44b2ce;
+		cursor: pointer;
+    	transition: color, .7s ease;
+	}
+	#projects{
+		height: 300px;
+		width: auto;
+		position: absolute;
+	}
+	#projects:hover{
+		color: #44b2ce;
+		cursor: pointer;
+    	transition: color, .7s ease;
+	}
+	#about{
+		height: 300px;
+		width: auto;
+		position: absolute;
+	}
+	#about:hover{
+		color: #44b2ce;
+		cursor: pointer;
+    	transition: color, .7s ease;
+	}
+	#resume{
+		height: 300px;
+		width: auto;
+		position: absolute;
+	}
+	#resume:hover{
+		color: #44b2ce;
+		cursor: pointer;
+    	transition: color, .7s ease;
+	}
+	#contact{
+		height: 300px;
+		width: auto;
+		position: absolute;
+	}
+	#contact:hover{
+		color: #44b2ce;
+		cursor: pointer;
+    	transition: color, .7s ease;
+	}
+
+	.divbox{
+		height:300px;
+		width:200px;
+background-size: 200% 200%;
+background-image: 
+linear-gradient(to top, #e0e0e0 50%, transparent 95%);
+-webkit-transition: background-position .7s, color .7s ease, border-color .7s ease;
+-moz-transition: background-position .7s, color .7s ease, border-color .7s ease;
+-ms-transition: background-position .7s, color .7s ease, border-color .7s ease;
+-o-transition: background-position .7s, color .7s ease, border-color .7s ease;
+transition: background-position .7s, color .7s ease, border-color .7s ease;
+
+	}
+
+	.divbox:hover{
+	background-image: 
+	linear-gradient(to top, #e0e0e0 50%, transparent 95%);
+	background-position: 0 100%;
+	-webkit-transition: background-position .7s, color .7s ease, border-color .7s ease;
+	-moz-transition: background-position .7s, color .7s ease, border-color .7s ease;
+	-ms-transition: background-position .7s, color .7s ease, border-color .7s ease;
+	-o-transition: background-position .7s, color .7s ease, border-color .7s ease;
+	transition: background-position .7s, color .7s ease, border-color .7s ease;
+	}
+
+	.barCH{
+		color: white;
+		font-size: 1.2em;
+		text-align: center;
+		letter-spacing: 2px;
+		height: 300px;
+		width: 200px;
+	}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation:portrait),
+(max-device-width: 736px) and (min-device-width: 320px) and (orientation: portrait),
+(min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait),
+(min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)
+{
+	nav{
+		display: block!important;
+		margin:auto!important;
+		height: 100%;
+		width: 100%;
+		width:400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	nav a{
+		margin:10%;
+		margin-left: auto;
+		margin-right: auto;
+		width:100%;
+		display: block;
+		border-radius: 5px;
+		padding: 35px;
+		padding-left: 4.5%;
+		padding-right: 4.5%;
+		text-decoration: none;
+		background-color: rgba(250,250,250, .8);
+		font-weight: lighter;
+		color: #000;
+		font-size: 2em;
+		text-align: center;
+		letter-spacing: 2px;
+
+	}
+
+	nav a:hover{
+		padding-left: 4.5%;
+		padding-right: 4.5%;
+		text-decoration: none;
+		color: #44b2ce;
+		font-size: 2em;
+		letter-spacing: 2px;
+    	transition: color, .8s ease;
+    	cursor: pointer;
+	}
+
+	a:hover{
+		color: #fff;
+    	transition: color, .8s ease;
+    	cursor: pointer;
+	}
+    #barcodeContainer{
+    	display: none;
+    }
+    #nameSplash2{
+    	margin-top: -55px;
+    	display:block!important;
+    }
+
+    #nameSplash{
+    	display:none;
+    }
+}

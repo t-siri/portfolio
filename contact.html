@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Contact </title>
+	<link rel="stylesheet" href="scss/style.css">
+	<script type="text/javascript"> </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/gen_validatorv31.js" type="text/javascript"></script>
+	<script src="js/big-slide.js"></script>
+	<script src="js/prevent-inspect.js"></script>
+</head>
+
+<body>
+
+	<a href="#menu" style="color:#44b2ce;" class="menu-link">&#9776;</a><br><br>
+	<nav id="menu" class="panel" role="navigation" style="margin-left:-10px;"> 
+		<br><br>
+		<ul>
+			<li><a href="index.html">HOME</a><li>
+			<li><a href="illustration.html">ILLUSTRATION </a><li>
+			<li><a href="projects.html">PROJECTS </a><li>
+			<li><a href="about.html">ABOUT </a><li>
+			<li><a href="resume.html">RESUME </a><li>
+			<li><a href="contact.html" class="currentPg">CONTACT </a><li>
+		</ul>
+	</nav>	
+
+	<nav class="float"> 
+			<a href="index.html">HOME</a>
+			<a href="illustration.html">ILLUSTRATION </a>
+			<a href="projects.html">PROJECTS </a>
+			<a href="about.html">ABOUT </a>
+			<a href="resume.html">RESUME </a>
+			<a href="contact.html" class="currentPg">CONTACT </a>
+
+	</nav>
+
+
+	<div class="outer">
+	<div class="middle">
+	<div class="inner">
+
+		<div class="bodySect">
+				<p style="text-align: center;">
+					You can contact me using the form below or email me at toy@kuldsigns.com
+				</p>
+					<div class="contact">
+						<!--- contact/form email also link to the shop 
+						http://www.sanwebe.com/2013/10/css-html-form-styles-->
+						<form method="post" name="contactform" action="contact-form-handler.php" class="basic-grey">
+						    <label for='name'>
+						        <span>Your Name :</span>
+						        <input id="name" type="text" name="name" placeholder="Your Full Name" />
+						    </label>
+						    
+						    <label for='email'>
+						        <span>Your Email :</span>
+						        <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+						    </label>
+						    
+						    <label for='message'>
+						        <span>Message :</span>
+						        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+						    </label>   
+						     <label>
+						        <span>&nbsp;</span> 
+						        <input type="submit" class="button" value="Send" /> 
+						    </label>    
+						</form>
+
+		</div>
+
+			
+		</div>
+
+
+	</div>
+	</div>
+	</div>
+
+<script language="JavaScript">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+
+<footer> 
+	<a href="tel:+61497077554"><span style="font-size: 1.5em; position: relative;
+	top: 2px;">&#x2706;</span> 0497077554  </a>
+	<a href="contact.html"><span style="font-size: 1.85em; position: relative;
+	top: 4.5px;">&#x2709;</span> toy@kuldsigns.com</a> 
+	<a href="https://www.linkedin.com/in/toy-sirichindakul/" target="_blank"><span style="font-size: 1.2em;">&#x270E;</span> LinkedIn</a> 
+	<br> Designed and Implemented by Toy Sirichindakul 
+</footer>
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
+</body>
+
+<img src="images/background.jpg" id="bg" alt="">
+</html>
