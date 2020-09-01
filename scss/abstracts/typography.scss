@@ -14,6 +14,12 @@ $source-font-family: monospace;
 
 $base-font-size: 16px;
 $base-font-weight: 400;
+$text-scale-ratio: 1.333;
+
+@include breakpoint(md) {
+	$base-font-size: 20px;
+	$text-scale-ratio: 1.25;
+}
 
 
 /* Weights */
@@ -22,7 +28,6 @@ $text-regular: 400;
 $text-medium: 600;
 $text-bold: 700;
 
-$text-scale-ratio: 1.333;
 $text-label: 1rem;
 
 /* Type scale */
@@ -39,11 +44,6 @@ $heading-line-height: 1.2;
 $body-line-height: 1.6;
 
 /*Scale down the text at a smaller screen size*/
-@include breakpoint(md) {
-	$text-base-size: 1.2rem;
-	$text-scale-ratio: 1.25;
-}
-
 /* Default HTML Selectors */
 
 p {

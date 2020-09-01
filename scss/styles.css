@@ -3169,11 +3169,8 @@ nav {
         animation-duration: 1s; }
   nav .contact-form {
     margin-top: auto; }
-    @media (max-width: 600px) {
-      nav .contact-form {
-        margin-bottom: 2.3rem; } }
     nav .contact-form textarea {
-      height: 3.75rem; }
+      height: 5.625rem; }
     nav .contact-form .submit-message {
       opacity: 0;
       height: 0; }
