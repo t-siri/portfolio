@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Experience </title>
+    <link rel="stylesheet" href="scss/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/big-slide.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/prevent-inspect.js"></script>
+</head>
+
+<body class="experience">
+    <h1>Toy Sirichindakul</h1>
+
+    <a href="#menu" style="color:#ffffff;" class="menu-link">
+        <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </a>
+    <header>
+        <h2> Experience </h2>
+    </header>
+
+    <section class="experience">
+
+        <a href="contact.html" class="experience-contact">For the full PDF resume please contact me.</a>
+        <br><br>
+
+        <section class="education">
+            <h4> Education </h4>
+
+            <h6>Undergraduate: Bachelor of Multimedia Design (2013-2017)</h6>
+            <p>Graduated from The University of Queensland with the Bachelor of Multimedia Design in July 2017
+            </p>
+
+            <h6>High School Diploma(2009-2012)</h6>
+            <p>Graduated Northbridge International School Cambodia with a high school diploma</p>
+        </section>
+
+        <section class="experience-list">
+            <h4> Experience </h4>
+            <div>
+                <h6>WorkingMouse</h6>
+                <p> as UIX Developer</p>
+            </div>
+
+            <div>
+                <h6>Canstar</h6>
+                <p> as Junior Developer</p>
+            </div>
+            <div>
+                <h6>Crowd Delivery</h6>
+                <p> as Multimedia and Sales Intern</p>
+            </div>
+            <div>
+                <h6>Hollyberry Business Consultant</h6>
+                <p> as Web Designer and Logo Designer</p>
+            </div>
+            <div>
+                <h6>UQ Student Relations Team</h6>
+                <p> as Visual Designer </p>
+            </div>
+            <div>
+                <h6>UQ Student Relations Team</h6>
+                <p> as Casual Employee</p>
+            </div>
+            <div>
+                <h6>Advance Cabello Co. Ltd.</h6>
+                <p> as Website Developer/Designer</p>
+            </div>
+        </section>
+
+    </section>
+
+
+    <nav id="menu" class="panel" role="navigation" style="margin-right:-10px;">
+        <div class="btn-group btn-group--vertical">
+            <a class="btn btn--outline" href="index.html">Home</a>
+            <a class="btn btn--outline" href="about.html">About</a>
+            <a class="btn btn--outline active" href="#">Experience </a>
+            <a class="btn btn--outline" href="work.html">View my work </a>
+            <a class="btn btn--outline" href="gallery.html">Creative gallery </a>
+        </div>
+        <div class="contact-form">
+            <div class="contact">
+                <h4 class="contact-heading">Say hello. <a href="contact.html"> Got more to say? </a></h4>
+                <form name="contact" netlify method="POST" data-netlify="true">
+                    <div class="input-group input-group--text">
+                        <label for='email'>
+                            <span>Your email</span>
+                            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+                        </label>
+                    </div>
+                    <div class="input-group input-group--textarea">
+                        <label for='message'>
+                            <span>Message</span>
+                            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                        </label>
+                    </div>
+
+                    <button class="btn btn--solid form-submit" type="submit"> Send it </button>
+                </form>
+
+            </div>
+
+            <div class="submit-message">
+                <h4>Thanks for messaging me! I'll get back to you as soon as I can.</h4>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".form-submit").click(function () {
+                $(".contact-form").addClass("submitted");
+            });
+        });
+    </script>
+</body>
+<footer>
+    <p>Designed and developed by <a href="https://www.linkedin.com/in/toy-sirichindakul"> Toy Sirichindakul</a></p>
+</footer>
+</html>

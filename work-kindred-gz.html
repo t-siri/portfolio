@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Work - Kindred Admin Portal </title>
+    <link rel="stylesheet" href="scss/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/big-slide.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/prevent-inspect.js"></script>
+</head>
+
+<body class="work">
+    <h1>Toy Sirichindakul</h1>
+
+    <a href="#menu" style="color:#ffffff;" class="menu-link">
+        <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </a>
+    <header>
+        <h2> Kindred Admin Portal </h2>
+
+        <a href="work.html" class="back-btn">Back</a>
+    </header>
+
+    <p>During my employment with <a href="workingmouse.com.au">WorkingMouse</a> I had the opportunity to work with Kindred a client in realestate.</p>
+    <p>The client wanted to change the realestate workflow and to do so, it required an admin portal that worked with the client portal.</p>
+    <p>Alongside this admin portal we also created the <a href="work-kindred.html">Client Portal</a>.</p>
+    
+    <section class="work-detail">
+        <div class="work-img-wrapper">
+            <img alt="Kindred Admin portal table design" src="img/work/kindred-admin-2.png" />
+        </div>
+        <section class="info">
+            <p>In order for the clients to communicate with Kindred's employees, it was required to create an admin portal to allow this flowing communication.</p>
+            <p>This design solution was created to solve problems for Kindred's Green Zone customer service team, marketers and for the CEO to view statistics.</p>
+        </section>
+
+        <div class="work-img-wrapper">
+            <img alt="Kindred Admin portal file upload design" src="img/work/kindred-admin-5.png" />
+        </div>
+
+        <section class="info">
+            <h6>The problem</h6>
+            <p>Kindred wanted a way to communicate with their clients promptly and efficiently, alongside we wanted this portal to provide solutions to other employees such as marketers, customer service team and the CEO himself.</p>
+            <p>Our client wanted a portal that shows statistics of his company, and mainly allowed clear and efficient communicatoin between their clients and the customer care team.</p>
+        </section>
+
+        <div class="work-img-wrapper mobile">
+            <img alt="Kindred Admin portal table design" src="img/work/kindred-admin-4.png" />
+        </div>
+
+        <section class="info">
+            <h6>The solution</h6>
+            <p>Alongisde the client portal, we designed the Green Zone portal that allowed Kindred's employees to accomplish multiple tasks.</p>
+            <p>We undergo user interviews with Kindred's employees, to understand their painpoints and how to help them work more efficiently. Alongside that, we researched on solutions for this portal and wireframed multiple solutions, until we came up with a finalised one.</p>
+            <p>From there, we did high fedility prototypes. These prototypes included multiple UX solutions for multiple use cases such as the dashboard, tables and file upload.</p>
+        </section>
+        
+    </section>
+    <p>Once we have prototyped, the developers started the frontend development and I customised the styling using <a href="work-harmony.html">Harmony's</a> Library. I styled using SCSS and with Harmony's pre-defined styles I was able to accomplish these customisations rapidly.</p>
+
+    <nav id="menu" class="panel" role="navigation" style="margin-right:-10px;">
+        <div class="btn-group btn-group--vertical">
+            <a class="btn btn--outline" href="index.html">Home</a>
+            <a class="btn btn--outline" href="about.html">About</a>
+            <a class="btn btn--outline" href="experience.html">Experience </a>
+            <a class="btn btn--outline active" href="work.html">View my work</a>
+            <a class="btn btn--outline" href="gallery.html">Creative gallery </a>
+        </div>
+        <div class="contact-form">
+            <div class="contact">
+                <h4 class="contact-heading">Say hello. <a href="contact.html"> Got more to say? </a></h4>
+                <form name="contact" netlify method="POST" data-netlify="true">
+                    <div class="input-group input-group--text">
+                        <label for='email'>
+                            <span>Your email</span>
+                            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+                        </label>
+                    </div>
+                    <div class="input-group input-group--textarea">
+                        <label for='message'>
+                            <span>Message</span>
+                            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                        </label>
+                    </div>
+
+                    <button class="btn btn--solid form-submit" type="submit"> Send it </button>
+                </form>
+
+            </div>
+
+            <div class="submit-message">
+                <h4>Thanks for messaging me! I'll get back to you as soon as I can.</h4>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".form-submit").click(function () {
+                $(".contact-form").addClass("submitted");
+            });
+        });
+    </script>
+</body>
+<footer>
+    <p>Designed and developed by <a href="https://www.linkedin.com/in/toy-sirichindakul"> Toy Sirichindakul</a></p>
+</footer>
+</html>

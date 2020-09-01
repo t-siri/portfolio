@@ -1,0 +1,52 @@
+body {
+    @include black-to-blue;
+    padding: $space-lg;
+    color: $white;
+    header {
+        @include slideInDown(0.5s);
+    }
+    @include media(xsm) {
+        padding: $space-md;
+    }
+}
+
+footer {
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+    opacity: .5;
+    @include media(xsm) {
+        margin-top: $space-md;
+    }
+    .home &, {
+        margin-top: 5.2rem;
+        @include media(xsm) {
+            margin-top: $space-sm;
+        }
+    }
+    p {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 0.75rem;
+        align-items: center;
+        justify-content: center;
+    }
+    a {
+        margin-left: 0.3rem;
+        height: 19px;
+    }
+
+    &:hover, &:active {
+        opacity: .9;
+        @include transform-timing(0.5);
+        a {
+            &:after {
+                content: "";
+                display: block;
+                background-color: $white;
+                height: 2px;
+                width: 88px;
+                @include slideInDown(1s);
+            }
+        }
+    }
+}

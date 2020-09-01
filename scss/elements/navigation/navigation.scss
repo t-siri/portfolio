@@ -1,0 +1,198 @@
+#menu,
+.menu-link {
+    position: fixed;
+}
+
+// https://codepen.io/designcouch/pen/Atyop
+/* Icon 1 */
+
+#nav-icon1 {
+    //hamburger width
+    width: convert-rem(25px);
+    height: convert-rem(30px);
+    position: relative;
+    margin: auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    @include media(xsm) {
+        &:after {
+            content: "";
+            z-index: -1;
+            background-color: rgba($black, 0.8);
+            box-shadow: convert-rem(0px) convert-rem(0px) convert-rem(6px) convert-rem(0px) $black;
+            height: convert-rem(44px);
+            width: convert-rem(44px);
+            border-radius: 50%;
+            position: absolute;
+            top: convert-rem(-13px);
+            left: convert-rem(-10px);
+            border-radius: 50%;
+        }
+    }
+    //hamburger
+    span {
+        display: block;
+        position: absolute;
+        height: convert-rem(3px);
+        width: 100%;
+        background: $white;
+        border-radius: convert-rem(9px);
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+        &:nth-child(1) {
+            top: convert-rem(0px);
+        }
+        &:nth-child(2) {
+            top: convert-rem(8px);
+        }
+        &:nth-child(3) {
+            top: convert-rem(16px);
+        }
+    }
+
+    //animate to x
+    &.open {
+        span {
+            &:nth-child(1) {
+                top: convert-rem(10px);
+                -webkit-transform: rotate(135deg);
+                -moz-transform: rotate(135deg);
+                -o-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+                left: convert-rem(-60px);
+            }
+            &:nth-child(3) {
+                top: convert-rem(10px);
+                -webkit-transform: rotate(-135deg);
+                -moz-transform: rotate(-135deg);
+                -o-transform: rotate(-135deg);
+                transform: rotate(-135deg);
+            }
+        }
+    }
+}
+
+.menu-link {
+    margin-top: -2rem;
+    right: 2rem;
+    font-size: 1.8rem;
+    z-index: 50000;
+    text-decoration: none;
+    @include media(xsm) {
+        position: fixed;
+        bottom: $space-lg;
+        right: $space-xs;
+    }
+}
+
+#menu {
+    margin-top: -1%;
+    text-align: left;
+    background-color: rgba($black, 0.9);
+    .btn-group {
+        margin-top: convert-rem(40px);
+
+        @include media(xsm) {
+            margin-top: 0;
+            .btn {
+                padding: $space-xs;
+            }
+        }
+
+        .btn {
+            font-size: 0.85rem;
+            margin: 0.6rem 0;
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: $space-md $space-lg;
+
+    h4 {
+        margin-bottom: $space-xxs;
+        font-size: convert-rem(15px);
+        display: flex;
+        a {
+            margin-left: auto;
+            height: convert-rem(19px);
+            &:hover,
+            &:active {
+                &:after {
+                    content: "";
+                    display: block;
+                    background-color: $white;
+                    height: convert-rem(2px);
+                    width: convert-rem(113px);
+                    @include slideInDown(1s);
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        margin-top: auto;
+
+        @include media(xsm) {
+            margin-bottom: 2.3rem;
+        }
+        textarea {
+            height: convert-rem(60px);
+        }
+
+        .submit-message {
+            opacity: 0;
+            height: 0;
+        }
+
+        &.submitted {
+            .submit-message {
+                opacity: 1;
+                height: auto;
+                @include slideInDown(1s);
+            }
+
+            .contact {
+                opacity: 0;
+                height: 0;
+            }
+        }
+    }
+    .form-submit {
+        font-size: 0.85rem;
+        margin: 0;
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .input-group {
+        margin: 0;
+        label {
+            font-size: 0.9rem;
+        }
+    }
+}

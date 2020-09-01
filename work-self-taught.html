@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Work - Self taught </title>
+    <link rel="stylesheet" href="scss/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/big-slide.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/prevent-inspect.js"></script>
+</head>
+
+<body class="work">
+    <h1>Toy Sirichindakul</h1>
+
+    <a href="#menu" style="color:#ffffff;" class="menu-link">
+        <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </a>
+    <header>
+        <h2> Self taught </h2>
+
+        <a href="work.html" class="back-btn">Back</a>
+    </header>
+
+    <p>Self taught is an online app that helps students learn languages and log their progress with their studies.</p>
+    <p>If assigned, teachers can view their student's progress and review their homework.</p>
+    <section class="work-detail">
+        <div class="work-img-wrapper">
+            <img alt="Self taught login screen" src="img/work/self-taught-1.png" />
+        </div>
+
+        <section class="info">
+            <p>My client had requested to redesign the application that he had built, he wanted it to be mobile
+                responsive and more user friendly.</p>
+            <p>Since my client wanted to focus on the students in this application, I had decided to redesign the
+                application as a student user and focus on the experience of the application as a student.</p>
+
+        </section>
+
+        <div class="work-img-wrapper">
+            <img alt="Self taught lessons and vocabulary" src="img/work/self-taught-2.png" />
+        </div>
+
+        <section class="info">
+            <h6>The problem</h6>
+            <p>The client wanted a redesign the application in a way to allow users to use the application on both
+                mobile and web.</p>
+            <p>They also wanted a better user experience and flow of the application on the web and a more mobile
+                friendly experience when they're on mobile.</p>
+        </section>
+
+        <div class="work-img-wrapper mobile">
+            <img alt="Self taught notes" src="img/work/self-taught-3.png" />
+        </div>
+
+        <section class="info">
+            <h6>The solution</h6>
+            <p>I have decided to design the mobile experience of the application first and made sure to design the web
+                after.</p>
+            <p>I interviewed the students and their process into learning a new language and how they would have used
+                the application, I found their pain points and made sure I tend to them.</p>
+            <p>The application was then redesigned with a new UI and UX.</p>
+
+        </section>
+
+    </section>
+
+
+    <nav id="menu" class="panel" role="navigation" style="margin-right:-10px;">
+        <div class="btn-group btn-group--vertical">
+            <a class="btn btn--outline" href="index.html">Home</a>
+            <a class="btn btn--outline" href="about.html">About</a>
+            <a class="btn btn--outline" href="experience.html">Experience </a>
+            <a class="btn btn--outline active" href="work.html">View my work</a>
+            <a class="btn btn--outline" href="gallery.html">Creative gallery </a>
+        </div>
+        <div class="contact-form">
+            <div class="contact">
+                <h4 class="contact-heading">Say hello. <a href="contact.html"> Got more to say? </a></h4>
+                <form name="contact" netlify method="POST" data-netlify="true">
+                    <div class="input-group input-group--text">
+                        <label for='email'>
+                            <span>Your email</span>
+                            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+                        </label>
+                    </div>
+                    <div class="input-group input-group--textarea">
+                        <label for='message'>
+                            <span>Message</span>
+                            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                        </label>
+                    </div>
+
+                    <button class="btn btn--solid form-submit" type="submit"> Send it </button>
+                </form>
+
+            </div>
+
+            <div class="submit-message">
+                <h4>Thanks for messaging me! I'll get back to you as soon as I can.</h4>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".form-submit").click(function () {
+                $(".contact-form").addClass("submitted");
+            });
+        });
+    </script>
+</body>
+<footer>
+    <p>Designed and developed by <a href="https://www.linkedin.com/in/toy-sirichindakul"> Toy Sirichindakul</a></p>
+</footer>
+</html>

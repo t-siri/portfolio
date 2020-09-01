@@ -1,0 +1,75 @@
+.contact-page {
+    padding-left: $space-xxl;
+    overflow: hidden;
+    @include media(xsm) {
+        padding: $space-md;
+        overflow: auto;
+    }
+    .linked-in {
+        display: inline-block;
+        height: 27px;
+        &:hover,
+        &:active {
+            &:after {
+                content: "";
+                display: block;
+                background-color: $white;
+                height: 2px;
+                width: 59px;
+                @include slideInDown(1s);
+            }
+        }
+    }
+    .contact-page-form {
+        p {
+            margin: .4rem 0 0 0;
+        }
+        .input-group {
+            &:first-of-type {
+                margin-top: $space-md;
+            }
+            label {
+                display: flex;
+                flex-direction: column;
+            }
+            input,
+            textarea {
+                @include media(md) {
+                    width: 100%;
+                }
+                width: 500px;
+            }
+            textarea {
+                height: 130px;
+            }
+        }
+        .btn {
+            margin-left: 350px;
+            @include media(md) {
+                margin-left: calc(100% - 150px);
+            }
+            @include media(xs) {
+                margin: auto;
+                width: 100%;
+            }
+        }
+
+        .submit-message {
+            opacity: 0;
+            height: 0;
+        }
+
+        &.submitted {
+            .submit-message {
+                opacity: 1;
+                height: auto;
+                @include slideInDown(1s);
+            }
+
+            .contact {
+                opacity: 0;
+                height: 0;
+            }
+        }
+    }
+}

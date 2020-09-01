@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Work </title>
+    <link rel="stylesheet" href="scss/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/big-slide.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/prevent-inspect.js"></script>
+</head>
+
+<body class="work">
+    <h1>Toy Sirichindakul</h1>
+
+    <a href="#menu" style="color:#ffffff;" class="menu-link">
+        <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </a>
+    <header>
+        <h2> My recent work </h2>
+        <p>A few of my recent work that I have worked on as freelance work, full-time work, and university projects.
+        </p>
+    </header>
+
+    <section class="work-gallery">
+        <a href="work-self-taught.html">
+            <div class="work-image">
+                <img alt="Self taught" src="img/work/self-taught.png">
+            </div>
+            <div class="work-info">
+                <h5>Self taught</h5>
+                <p class="blurb">A re-design of an application that taught users new languages.</p>
+                <p class="read-more">Click to read more</p>
+            </div>
+        </a>
+        <a href="work-harmony.html">
+            <div class="work-image">
+                <img alt="Harmony" src="img/work/harmony.png">
+            </div>
+            <div class="work-info">
+                <h5>Harmony</h5>
+                <p class="blurb"> I had the chance to design and create a library with components and standardised SCSS.
+                </p>
+                <p class="read-more">Click to read more</p>
+            </div>
+        </a>
+        <a href="work-kindred.html">
+            <div class="work-image">
+                <img alt="Kindred" src="img/work/kindred-client-1.png">
+            </div>
+            <div class="work-info">
+                <h5>Kindred Client Portal</h5>
+                <p class="blurb">My client wanted to find a way to provide the best customer service in realesate.</p>
+                <p class="read-more">Click to read more</p>
+            </div>
+        </a>
+        <a href="work-kindred-gz.html">
+            <div class="work-image">
+                <img alt="Kindred" src="img/work/kindred-gz-1.png">
+            </div>
+            <div class="work-info">
+                <h5>Kindred Green Zone Portal</h5>
+                <p class="blurb">Alongisde the client portal for Kindred, we needed to design an Admin portal to connect the client portal with the admin portal.</p>
+                <p class="read-more">Click to read more</p>
+            </div>
+        </a>
+        <a href="work-advance-cabello.html">
+            <div class="work-image">
+                <img alt="advance-cabello" src="img/work/advance-cabello.png">
+            </div>
+            <div class="work-info">
+                <h5>Advance Cabello</h5>
+                <p class="blurb">My client wanted marketing website to represent their company that sells quality hair
+                    products.</p>
+                <p class="read-more">Click to read more</p>
+            </div>
+        </a>
+        <a href="work-portfolio.html">
+            <div class="work-image">
+                <img alt="Old portfolio" src="img/work/portfolio.png">
+            </div>
+            <div class="work-info">
+                <h5>Portfolio - 2016</h5>
+                <p class="blurb">My old portfolio that I have worked on continously before I updated this current one.
+                </p>
+                <p class="read-more">Click to read more</p>
+            </div>
+        </a>
+        <a href="work-hollyberry.html">
+            <div class="work-image">
+                <img alt="Hollyberry" src="img/work/hollyberry.png">
+            </div>
+            <div class="work-info">
+                <h5>Hollyberry</h5>
+                <p class="blurb">My client was wanted a marketing website in order for their company to be recognised
+                    online.</p>
+                <p class="read-more">Click to read more</p>
+            </div>
+        </a>
+        <a href="work-crowd.html">
+            <div class="work-image">
+                <img alt="crowd delivery" src="img/work/crowd.png">
+            </div>
+            <div class="work-info">
+                <h5>Crowd Delivery Blog</h5>
+                <p class="blurb">As an intern at Crowd Delivery, I was managing and styling the blog using Wordpress.</p>
+                <p class="read-more">Click to read more</p>
+            </div>
+        </a>
+    </section>
+
+
+    <nav id="menu" class="panel" role="navigation" style="margin-right:-10px;">
+        <div class="btn-group btn-group--vertical">
+            <a class="btn btn--outline" href="index.html">Home</a>
+            <a class="btn btn--outline" href="about.html">About</a>
+            <a class="btn btn--outline" href="experience.html">Experience </a>
+            <a class="btn btn--outline active" href="#">View my work</a>
+            <a class="btn btn--outline" href="gallery.html">Creative gallery </a>
+        </div>
+        <div class="contact-form">
+            <div class="contact">
+                <h4 class="contact-heading">Say hello. <a href="contact.html"> Got more to say? </a></h4>
+                <form name="contact" netlify method="POST" data-netlify="true">
+                    <div class="input-group input-group--text">
+                        <label for='email'>
+                            <span>Your email</span>
+                            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+                        </label>
+                    </div>
+                    <div class="input-group input-group--textarea">
+                        <label for='message'>
+                            <span>Message</span>
+                            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                        </label>
+                    </div>
+
+                    <button class="btn btn--solid form-submit" type="submit"> Send it </button>
+                </form>
+
+            </div>
+
+            <div class="submit-message">
+                <h4>Thanks for messaging me! I'll get back to you as soon as I can.</h4>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".form-submit").click(function () {
+                $(".contact-form").addClass("submitted");
+            });
+        });
+    </script>
+</body>
+<footer>
+    <p>Designed and developed by <a href="https://www.linkedin.com/in/toy-sirichindakul"> Toy Sirichindakul</a></p>
+</footer>
+
+</html>

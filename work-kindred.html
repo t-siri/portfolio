@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Work - Kindred Client Portal </title>
+    <link rel="stylesheet" href="scss/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/big-slide.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/prevent-inspect.js"></script>
+</head>
+
+<body class="work">
+    <h1>Toy Sirichindakul</h1>
+
+    <a href="#menu" style="color:#ffffff;" class="menu-link">
+        <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </a>
+    <header>
+        <h2> Kindred Client Portal </h2>
+
+        <a href="work.html" class="back-btn">Back</a>
+    </header>
+
+    <p>During my employment with <a href="workingmouse.com.au">WorkingMouse</a> I had the opportunity to work with
+        Kindred a client in realestate.</p>
+    <p>The client wanted to change the realestate workflow and to do so, it required a client portal.</p>
+    <p>Alongside this client portal we also created the <a href="work-kindred-gz.html">Green Zone Portal</a>, which
+        allows Kindred to communicate with clients promptly.</p>
+
+    <section class="work-detail">
+        <div class="work-img-wrapper">
+            <img alt="Kindred client portal property enquiry" src="img/work/kindred-client-2.png" />
+        </div>
+
+        <section class="info">
+            <p>This client portal for Kindred has been designed for Kindred's clients to view property and enquire about
+                them dynamically.</p>
+            <p>This client portal allowed for users to view properties and chat with a Kindred agent to further build
+                their relationship with Kindred and accomplish their property goals.</p>
+
+        </section>
+
+        <div class="work-img-wrapper">
+            <img alt="Kindred client portal property list" src="img/work/kindred-client-3.png" />
+        </div>
+
+        <section class="info">
+            <h6>The problem</h6>
+            <p>Kindred wanted an innovative way for clients to contact them whenever they see fit to their own schedule
+                and recieve a response right away.</p>
+            <p>Our client saw a flaw in realestate and wanted to enhance their customers' experience by providing the
+                best service.</p>
+        </section>
+
+        <div class="work-img-wrapper mobile">
+            <img alt="Kindred client portal mobile views" src="img/work/kindred-client-4.png" />
+        </div>
+
+        <section class="info">
+            <h6>The solution</h6>
+            <p>With the current problem Kindred is facing, we have spent hte time to undergo discovery interviews,
+                brainstorming sessions and design solutions that were constnatly re-iterated after user testing.</p>
+            <p>We finalised our findings by producing a web and mobile-focused system that allowed clients to view
+                available properties and enquire about them immediately.</p>
+            <p>Clients were able to create their profile, save their favourites and communicate with Kindred employees
+                consistently to accomplish their property goals.</p>
+
+        </section>
+
+    </section>
+    <p>Once we have prototyped, the developers started the frontend development and I customised the styling using <a
+            href="work-harmony.html">Harmony's</a> Library. I styled using SCSS and with Harmony's pre-defined styles I
+        was able to accomplish these customisations rapidly.</p>
+
+    <nav id="menu" class="panel" role="navigation" style="margin-right:-10px;">
+        <div class="btn-group btn-group--vertical">
+            <a class="btn btn--outline" href="index.html">Home</a>
+            <a class="btn btn--outline" href="about.html">About</a>
+            <a class="btn btn--outline" href="experience.html">Experience </a>
+            <a class="btn btn--outline active" href="work.html">View my work</a>
+            <a class="btn btn--outline" href="gallery.html">Creative gallery </a>
+        </div>
+        <div class="contact-form">
+            <div class="contact">
+                <h4 class="contact-heading">Say hello. <a href="contact.html"> Got more to say? </a></h4>
+                <form name="contact" netlify method="POST" data-netlify="true">
+                    <div class="input-group input-group--text">
+                        <label for='email'>
+                            <span>Your email</span>
+                            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+                        </label>
+                    </div>
+                    <div class="input-group input-group--textarea">
+                        <label for='message'>
+                            <span>Message</span>
+                            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                        </label>
+                    </div>
+
+                    <button class="btn btn--solid form-submit" type="submit"> Send it </button>
+                </form>
+
+            </div>
+
+            <div class="submit-message">
+                <h4>Thanks for messaging me! I'll get back to you as soon as I can.</h4>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".form-submit").click(function () {
+                $(".contact-form").addClass("submitted");
+            });
+        });
+    </script>
+</body>
+<footer>
+    <p>Designed and developed by <a href="https://www.linkedin.com/in/toy-sirichindakul"> Toy Sirichindakul</a></p>
+</footer>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Work - Crowd Delivery </title>
+    <link rel="stylesheet" href="scss/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/big-slide.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/prevent-inspect.js"></script>
+</head>
+
+<body class="work">
+    <h1>Toy Sirichindakul</h1>
+
+    <a href="#menu" style="color:#ffffff;" class="menu-link">
+        <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </a>
+    <header>
+        <h2> Crowd Delivery </h2>
+
+        <a href="work.html" class="back-btn">Back</a>
+    </header>
+
+    <p>As an intern at Crowd Delivery I was responsible for updating and designing the blog as well as other
+        multimedia content within the company.</p>
+    <p>Alongside managing the company's Wordpress blog and styling the site, I also photographed, videographed,
+        and created multimedia content for them.</p>
+    <section class="work-detail">
+        <div class="work-img-wrapper">
+            <img alt="Crowd Delivery Blog" src="img/work/crowd-1.png" />
+        </div>
+
+        <section class="info">
+            <h6>The problem</h6>
+            <p>Crowd Delivery wanted to reach out to more people but in a personalised manner.</p>
+            <p>They wanted the content they provided to their clients to feel unique and customised to them.</p>
+        </section>
+
+        <section class="info info-crowd">
+            <h6>The solution</h6>
+            <p>We decided to create a website that had blog articles published every other day.
+                The content had puns and humour in order to make users feel welcomed to the content.</p>
+            <p>We also made sure that the content is related to them, we wrote articles that were related to the
+                seasons, and the occasions.</p>
+        </section>
+    </section>
+
+
+    <nav id="menu" class="panel" role="navigation" style="margin-right:-10px;">
+        <div class="btn-group btn-group--vertical">
+            <a class="btn btn--outline" href="index.html">Home</a>
+            <a class="btn btn--outline" href="about.html">About</a>
+            <a class="btn btn--outline" href="experience.html">Experience </a>
+            <a class="btn btn--outline active" href="work.html">View my work</a>
+            <a class="btn btn--outline" href="gallery.html">Creative gallery </a>
+        </div>
+        <div class="contact-form">
+            <div class="contact">
+                <h4 class="contact-heading">Say hello. <a href="contact.html"> Got more to say? </a></h4>
+                <form name="contact" netlify method="POST" data-netlify="true">
+                    <div class="input-group input-group--text">
+                        <label for='email'>
+                            <span>Your email</span>
+                            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+                        </label>
+                    </div>
+                    <div class="input-group input-group--textarea">
+                        <label for='message'>
+                            <span>Message</span>
+                            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                        </label>
+                    </div>
+
+                    <button class="btn btn--solid form-submit" type="submit"> Send it </button>
+                </form>
+
+            </div>
+
+            <div class="submit-message">
+                <h4>Thanks for messaging me! I'll get back to you as soon as I can.</h4>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".form-submit").click(function () {
+                $(".contact-form").addClass("submitted");
+            });
+        });
+    </script>
+</body>
+<footer>
+    <p>Designed and developed by <a href="https://www.linkedin.com/in/toy-sirichindakul"> Toy Sirichindakul</a></p>
+</footer>
+</html>

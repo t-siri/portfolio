@@ -1,0 +1,90 @@
+.about {
+    header {
+        display: flex;
+        align-items: center;
+        margin-bottom: $space-lg;
+
+        h2 {
+            margin-bottom: 0;
+        }
+        .about-image {
+            height: convert-rem(100px);
+            width: convert-rem(100px);
+
+            @include media(xsm) {
+                margin-right: $space-sm;
+            }
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: $space-lg;
+            img {
+                object-fit: contain;
+                width: 100%;
+            }
+        }
+    }
+
+    h4 {
+        margin-bottom: $space-xxs;
+    }
+
+    section {
+        ul {
+            padding: 0;
+            list-style: none;
+            li {
+                font-family: $body-font-family;
+                margin-bottom: $space-xs;
+            }
+        }
+        &.about-me,
+        &.bottom-about {
+            padding-right: 25%;
+            @include media(md) {
+                padding-right: 0;
+            }
+        }
+        &.bottom-about {
+            display: flex;
+            justify-content: space-between;
+            margin-top: $space-md;
+            @include media(md) {
+                flex-direction: column;
+            }
+        }
+        .skillsets {
+            @include media(md) {
+                margin-top: $space-md;
+            }
+        }
+        .skillsets-list {
+            display: flex;
+            @include media(xsm) {
+                flex-direction: column;
+                ul{
+                    margin: 0;
+                } 
+            }
+            ul {
+                &:first-of-type {
+                    margin-right: $space-xxxl;
+                }
+            }
+        }
+    }
+
+    .about-test {
+        height: convert-rem(40px);
+        &:hover,
+        &:active {
+            &:after {
+                content: "";
+                display: block;
+                background-color: $white;
+                height: convert-rem(2px);
+                width: convert-rem(235px);
+                @include slideInDown(1s);
+            }
+        }
+    }
+}

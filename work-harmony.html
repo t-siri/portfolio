@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Work - Harmony </title>
+    <link rel="stylesheet" href="scss/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/big-slide.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/prevent-inspect.js"></script>
+</head>
+
+<body class="work">
+    <h1>Toy Sirichindakul</h1>
+
+    <a href="#menu" style="color:#ffffff;" class="menu-link">
+        <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </a>
+    <header>
+        <h2> Harmony </h2>
+
+        <a href="work.html" class="back-btn">Back</a>
+    </header>
+
+    <p>During my employment with <a href="workingmouse.com.au">WorkingMouse</a> I had the opportunity to work with <a href="codebots.com">Codebots</a> and design Codebots' bot design guidelines and Harmony.</p>
+    <p>Harmony is a library with standardised HTML and SCSS. I had the opportunity to work with my colleagues and design behaviours such as, CRUD, Timelines, Dashboards and many more components.</p>
+    <p>This library consist of multiple lines of SCSS code that styles all the components that are found in the bot, from buttons and inputs to high functional behaviours. The library is written in a very clean and organised manner to allow clients that uses these bots to easily customise their project in SCSS. The standardisation of HTML and Harmony has enabled these bots to produced high functional components that are standardised to the required UX and the ability to view, manipulate and use clean code with the given Harmony library.</p>
+    <section class="work-detail">
+        <div class="work-img-wrapper">
+            <img alt="Harmony Timelines behaviour design" src="img/work/harmony-1.png" />
+        </div>
+
+        <section class="info">
+            <p>Alongside these designs, I standardised them by writing the HTML structure for them and also created an SCSS library named Harmony that pre-styles these components.</p>
+            <p>These bots and Harmony has two sections to them the Admin section and the Frontend section and I had the challenge to implement a library to style both ends seperately but also allows customisation in the frontend.</p>
+
+        </section>
+
+        <div class="work-img-wrapper">
+            <img alt="Harmony Dashboards behaviour design" src="img/work/harmony-2.png" />
+        </div>
+
+        <section class="info">
+            <h6>The problem</h6>
+            <p>Before we were able to start on development, we had to come up with designs of the behaviours, these behaviours were advanced and modern which required great UX Design.</p>
+            <p>Not only did the behaviour required a well design User Experience, but it also required a structural HTML and SCSS code that allows customisation for Codebots' clients.</p>
+        </section>
+
+        <div class="work-img-wrapper mobile">
+            <img alt="Harmony Dashboards behaviour design" src="img/work/harmony-3.png" />
+        </div>
+
+        <section class="info">
+            <h6>The solution</h6>
+            <p>With time spent on user research and product research, we were able to come up with a few designs for these behaviours and we constantly re-iterated with user testing.</p>
+            <p>Once we were satisfied with the designs, I then spent the time to write the HTML standards for these behaviours and worked with the developers to creating them with alongside the bots.</p>
+            <p>I then styled these behaviours and components in the Harmony library.</p>
+
+        </section>
+
+    </section>
+
+
+    <nav id="menu" class="panel" role="navigation" style="margin-right:-10px;">
+        <div class="btn-group btn-group--vertical">
+            <a class="btn btn--outline" href="index.html">Home</a>
+            <a class="btn btn--outline" href="about.html">About</a>
+            <a class="btn btn--outline" href="experience.html">Experience </a>
+            <a class="btn btn--outline active" href="work.html">View my work</a>
+            <a class="btn btn--outline" href="gallery.html">Creative gallery </a>
+        </div>
+        <div class="contact-form">
+            <div class="contact">
+                <h4 class="contact-heading">Say hello. <a href="contact.html"> Got more to say? </a></h4>
+                <form name="contact" netlify method="POST" data-netlify="true">
+                    <div class="input-group input-group--text">
+                        <label for='email'>
+                            <span>Your email</span>
+                            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+                        </label>
+                    </div>
+                    <div class="input-group input-group--textarea">
+                        <label for='message'>
+                            <span>Message</span>
+                            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                        </label>
+                    </div>
+
+                    <button class="btn btn--solid form-submit" type="submit"> Send it </button>
+                </form>
+
+            </div>
+
+            <div class="submit-message">
+                <h4>Thanks for messaging me! I'll get back to you as soon as I can.</h4>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".form-submit").click(function () {
+                $(".contact-form").addClass("submitted");
+            });
+        });
+    </script>
+</body>
+<footer>
+    <p>Designed and developed by <a href="https://www.linkedin.com/in/toy-sirichindakul"> Toy Sirichindakul</a></p>
+</footer>
+</html>
