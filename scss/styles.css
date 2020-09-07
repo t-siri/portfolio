@@ -3167,8 +3167,17 @@ nav {
         -webkit-animation-name: slideInDown;
         animation-name: slideInDown;
         animation-duration: 1s; }
+  nav .btn--contact {
+    display: none; }
+    @media (max-width: 600px) {
+      nav .btn--contact {
+        display: flex; } }
   nav .contact-form {
-    margin-top: auto; }
+    margin-top: auto;
+    display: block; }
+    @media (max-width: 600px) {
+      nav .contact-form {
+        display: none; } }
     nav .contact-form textarea {
       height: 4.375rem; }
     nav .contact-form .submit-message {

@@ -153,9 +153,19 @@ nav {
             }
         }
     }
+    .btn--contact {
+        display: none;
+        @include media(xsm) {
+            display: flex;
+        }
+    }
 
     .contact-form {
         margin-top: auto;
+        display: block;
+        @include media(xsm) {
+            display: none;
+        }
 
         textarea {
             height: convert-rem(70px);
