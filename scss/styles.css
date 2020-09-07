@@ -3143,9 +3143,7 @@ select {
       #menu .btn-group {
         margin-top: 0;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 80%; }
+        flex-direction: column; }
         #menu .btn-group .btn {
           padding: calc(1.5 * 1rem); } }
     #menu .btn-group .btn {
