@@ -3145,7 +3145,7 @@ select {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 90%; }
+        height: 80%; }
         #menu .btn-group .btn {
           padding: calc(1.5 * 1rem); } }
     #menu .btn-group .btn {
