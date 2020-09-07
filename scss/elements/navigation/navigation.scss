@@ -108,19 +108,29 @@
     margin-top: -1%;
     text-align: left;
     background-color: rgba($black, 0.9);
+    @include media(xsm) {
+        background-color: rgba($black, 0.98);
+    }
     .btn-group {
         margin-top: convert-rem(40px);
 
         @include media(xsm) {
             margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 90%;
             .btn {
-                padding: $space-xs;
+                padding: $space-sm;
             }
         }
 
         .btn {
             font-size: 0.85rem;
             margin: 0.6rem 0;
+            @include media(xsm) {
+                font-size: 1rem;
+            }
             &:first-of-type {
                 margin-top: 0;
             }
