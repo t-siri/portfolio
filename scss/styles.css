@@ -3268,6 +3268,8 @@ footer {
   -webkit-animation: slideGradient 8s ease infinite;
   -moz-animation: slideGradient 8s ease infinite;
   animation: slideGradient 8s ease infinite; }
+  .home > div {
+    display: flex; }
   @media (max-width: 600px) {
     .home {
       padding: calc(2 * 1rem);
@@ -3295,6 +3297,19 @@ footer {
       -webkit-animation-name: slideInUp;
       animation-name: slideInUp;
       animation-duration: 2s; }
+  .home .work-preview {
+    height: 100vh;
+    width: 20vw;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    @media (max-width: 1000px) {
+      .home .work-preview {
+        display: none; } }
+    .home .work-preview a img {
+      width: 100%;
+      height: auto; }
 
 .about header {
   display: flex;
@@ -3483,7 +3498,7 @@ footer {
         animation-duration: 0.4s; }
 .work .work-detail {
   display: grid;
-  grid-template-areas: "img info" "info2 img2" "img3 info3" "crowd crowd";
+  grid-template-areas: "img info" "info2 img2" "img3 info3" "info4 img4" "crowd crowd";
   grid-template-columns: 1fr 2fr;
   align-items: center; }
   .work .work-detail h6 {
@@ -3504,12 +3519,14 @@ footer {
       grid-area: info2; }
     .work .work-detail .info:nth-of-type(3) {
       grid-area: info3; }
+    .work .work-detail .info:nth-of-type(4) {
+      grid-area: info4; }
     .work .work-detail .info-crowd {
       padding-right: 0;
       grid-area: crowd !important; }
   @media (max-width: 1250px) {
     .work .work-detail {
-      grid-template-areas: "img" "info" "img2" "info2" "img3" "info3" "crowd";
+      grid-template-areas: "img" "info" "img2" "info2" "img3" "info3" "img4" "info4" "crowd";
       grid-template-columns: 1fr; } }
 .work .work-img-wrapper {
   grid-area: img;
@@ -3540,6 +3557,8 @@ footer {
     grid-area: img2; }
   .work .work-img-wrapper:nth-of-type(3) {
     grid-area: img3; }
+  .work .work-img-wrapper:nth-of-type(4) {
+    grid-area: img4; }
   .work .work-img-wrapper.mobile {
     padding: calc(0.5 * 1rem); }
   .work .work-img-wrapper img {

@@ -160,6 +160,9 @@
             &:nth-of-type(3) {
                 grid-area: info3;
             }
+            &:nth-of-type(4) {
+                grid-area: info4;
+            }
             &-crowd {
                 padding-right: 0;
                 grid-area: crowd !important;
@@ -171,6 +174,7 @@
             "img info"
             "info2 img2"
             "img3 info3"
+            "info4 img4"
             "crowd crowd";
         grid-template-columns: 1fr 2fr;
         align-items: center;
@@ -183,6 +187,8 @@
                 "info2"
                 "img3"
                 "info3"
+                "img4"
+                "info4"
                 "crowd";
             grid-template-columns: 1fr;
         }
@@ -219,6 +225,9 @@
         }
         &:nth-of-type(3) {
             grid-area: img3;
+        }
+        &:nth-of-type(4) {
+            grid-area: img4;
         }
         &.mobile {
             padding: $space-xxs;
