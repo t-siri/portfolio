@@ -276,26 +276,28 @@
     </script>
 
     <script>
-        // $(function () {
-        //     var container = $('.creative-gallery').masonry();
-             
-        //     setTimeout(function() {
-        //     $grid.masonry('.gallery-image');
-        //     }, 500);
-        // });
         $(function () {
-            var container = $('.creative-gallery');
-
-            // Trigger masonry
-            container.masonry({
-                itemSelector: '.gallery-image',
-                fitWidth: true,
-                horizontalOrder: false,
-                fitWidth: true,
-                fitHeight: true
-            });
-            window.dispatchEvent(new Event('resize'));
+            var container = $('.creative-gallery').masonry();
+             
+            setTimeout(function() {
+            $grid.masonry('.gallery-image');
+            }, 1000);
         });
+
+        //window.dispatchEvent(new Event('resize'));
+
+        // $(function () {
+        //     var container = $('.creative-gallery');
+
+        //     // Trigger masonry
+        //     container.masonry({
+        //         itemSelector: '.gallery-image',
+        //         fitWidth: true,
+        //         horizontalOrder: false,
+        //         fitWidth: true,
+        //         fitHeight: true
+        //     });
+        // });
     </script>
     <script src="js/masonry.js"></script>
 </body>
