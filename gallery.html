@@ -276,17 +276,14 @@
     </script>
 
     <script>
+        $grid = $('.grid-class').masonry();
         $(function () {
-            var container = $('.creative-gallery');
+            var container = $('.creative-gallery').masonry();
+             
 
-            // Trigger masonry
-            container.masonry({
-                itemSelector: '.gallery-image',
-                fitWidth: true,
-                horizontalOrder: false,
-                fitWidth: true,
-                fitHeight: true
-            });
+            setTimeout(function() {
+            $grid.masonry('.gallery-image');
+            }, 500);
         });
     </script>
     <script src="js/masonry.js"></script>
