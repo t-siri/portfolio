@@ -282,9 +282,10 @@
             setTimeout(function() {
             container.masonry('.gallery-image');
             }, 1000);
+
+            $(window).trigger('resize');
         });
 
-        //window.dispatchEvent(new Event('resize'));
 
         // $(function () {
         //     var container = $('.creative-gallery');
