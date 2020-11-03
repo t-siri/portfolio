@@ -27,6 +27,7 @@
             align-content: center;
             display: flex;
             float: left;
+            position: relative;
             @include inner-box-shadow(
                 convert-rem(0px),
                 convert-rem(0px),

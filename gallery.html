@@ -283,9 +283,9 @@
             container.masonry('.gallery-image');
             }, 1000);
 
-            $(window).trigger('resize');
         });
-
+        
+        $(window).load( function(){   $('.creative-gallery').masonry(); });
 
         // $(function () {
         //     var container = $('.creative-gallery');

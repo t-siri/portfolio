@@ -3588,6 +3588,7 @@ footer {
   align-content: center;
   display: flex;
   float: left;
+  position: relative;
   -webkit-box-shadow: inset 0rem 0rem 0rem 0.125rem white;
   -moz-box-shadow: inset 0rem 0rem 0rem 0.125rem white;
   box-shadow: inset 0rem 0rem 0rem 0.125rem white;
