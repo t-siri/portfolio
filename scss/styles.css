@@ -3498,7 +3498,7 @@ footer {
         animation-duration: 0.4s; }
 .work .work-detail {
   display: grid;
-  grid-template-areas: "img info" "info2 img2" "img3 info3" "info4 img4" "crowd crowd";
+  grid-template-areas: "img info" "info2 img2" "img3 info3" "info4 img4" "crowd crowd" "gallery gallery";
   grid-template-columns: 1fr 2fr;
   align-items: center; }
   .work .work-detail h6 {
@@ -3526,7 +3526,7 @@ footer {
       grid-area: crowd !important; }
   @media (max-width: 1250px) {
     .work .work-detail {
-      grid-template-areas: "img" "info" "img2" "info2" "img3" "info3" "img4" "info4" "crowd";
+      grid-template-areas: "img" "info" "img2" "info2" "img3" "info3" "img4" "info4" "crowd" "gallery";
       grid-template-columns: 1fr; } }
 .work .work-img-wrapper {
   grid-area: img;
@@ -3567,6 +3567,26 @@ footer {
     -webkit-animation-name: slideInDown;
     animation-name: slideInDown;
     animation-duration: 0.5s; }
+.work .img-wrapper-gallery {
+  grid-area: gallery;
+  margin: calc(3 * 1rem) 0;
+  width: auto;
+  height: 280px;
+  overflow: hidden;
+  background-color: #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .work .img-wrapper-gallery img {
+    width: 50%; }
+  @media (max-width: 800px) {
+    .work .img-wrapper-gallery {
+      height: auto;
+      flex-wrap: wrap; }
+      .work .img-wrapper-gallery img {
+        height: auto;
+        width: 90%;
+        margin: calc(2 * 1rem); } }
 
 .gallery header {
   margin-bottom: calc(3 * 1rem); }

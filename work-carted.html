@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Work - Carted </title>
+    <link rel="stylesheet" href="scss/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/big-slide.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/prevent-inspect.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="work">
+    <h1>Toy Sirichindakul</h1>
+
+    <a href="#menu" style="color:#ffffff;" class="menu-link">
+        <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </a>
+    <header>
+        <h2> Carted </h2>
+
+        <a href="work.html" class="back-btn">Back</a>
+    </header>
+
+    <p>Carted is a side project I have founded and is a current work in progress.</p>
+    <p>The idea behind this came from me and how I wanted to simplify my shopping experience in general.</p>
+
+    <section class="work-detail">
+        <div class="work-img-wrapper">
+            <img alt="carted home page" src="img/work/carted-1.png" />
+        </div>
+
+        <section class="info">
+            <h6>The problem</h6>
+            <p>It was very tedious for me to find items that I liked at a cheap price and I would spend a significant
+                amount of time before purchasing a product.
+            </p>
+            <p>Even when I would window shop in stores, I wanted to watch an item becuase I didn't want to pay full
+                price for it.</p>
+        </section>
+
+        <div class="work-img-wrapper">
+            <img alt="carted search result" src="img/work/carted-2.png" />
+        </div>
+
+        <section class="info">
+            <h6>The solution</h6>
+            <p>I came up with this wishlist idea and have worked on the designs on it as a side project.</p>
+            <p>This ongoing project's goal is to help users with their shopping experience and to help them find the
+                best product and price for it as quick as possible.</p>
+        </section>
+
+        <div class="work-img-wrapper">
+            <img alt="carted search result" src="img/work/carted-3.png" />
+        </div>
+        <section class="info">
+            <h6>The outcome</h6>
+            <p>Although still a work in progress, I was able to come up with user research, to understand window shoppers' paintpoints and how to further enhacne their experience.</p>
+            <p>I then spent a significant amount of time on the branding and colour scheme to make sure the brand is accessible.</p>
+        </section>
+
+        <div class="img-wrapper-gallery">
+            <img alt="carted search result" src="img/work/carted-4.png" />
+            <img alt="carted search result" src="img/work/carted-5.png" />
+        </div>
+    </section>
+
+
+    <nav id="menu" class="panel" role="navigation" style="margin-right:-10px;">
+        <div class="btn-group btn-group--vertical">
+            <a class="btn btn--outline" href="index.html">Home</a>
+            <a class="btn btn--outline" href="about.html">About</a>
+            <a class="btn btn--outline" href="experience.html">Experience </a>
+            <a class="btn btn--outline active" href="work.html">View my work</a>
+            <a class="btn btn--outline" href="gallery.html">Creative gallery </a>
+            <a class="btn btn--outline btn--contact" href="contact.html">Contact me </a>
+        </div>
+        <div class="contact-form">
+            <div class="contact">
+                <h4 class="contact-heading">Say hello. <a href="contact.html"> Got more to say? </a></h4>
+                <form name="contact" netlify method="POST" data-netlify="true">
+                    <div class="input-group input-group--text">
+                        <label for='email'>
+                            <span>Your email</span>
+                            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+                        </label>
+                    </div>
+                    <div class="input-group input-group--textarea">
+                        <label for='message'>
+                            <span>Message</span>
+                            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                        </label>
+                    </div>
+
+                    <button class="btn btn--solid form-submit" type="submit"> Send it </button>
+                </form>
+
+            </div>
+
+            <div class="submit-message">
+                <h4>Thanks for messaging me! I'll get back to you as soon as I can.</h4>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".form-submit").click(function () {
+                $(".contact-form").addClass("submitted");
+            });
+        });
+    </script>
+</body>
+<footer>
+    <p>Designed and developed by <a href="https://www.linkedin.com/in/toy-sirichindakul"> Toy Sirichindakul</a></p>
+</footer>
+
+</html>
