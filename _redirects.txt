@@ -1,6 +1,0 @@
-# Redirects from what the browser requests to what we serve
-
-/advancecabellow            www.advancecabello.com
-/harmonydesignsystem        https://harmony-design.netlify.app/
-/workingmouse               https://workingmouse.com.au
-/codebotsmarketing          www.codebots.com
