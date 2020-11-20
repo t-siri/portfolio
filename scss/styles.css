@@ -3499,6 +3499,7 @@ footer {
         animation-name: slideInUp;
         animation-duration: 0.4s; }
 .work .work-detail {
+  margin-top: calc(3 * 1rem);
   display: grid;
   grid-template-areas: "img info" "info2 img2" "img3 info3" "info4 img4" "crowd crowd" "gallery gallery";
   grid-template-columns: 1fr 2fr;
