@@ -13,12 +13,13 @@
 
             @include media(xsm) {
                 margin-right: $space-sm;
+                width: 6.55rem;
             }
             overflow: hidden;
             border-radius: 50%;
             margin-right: $space-lg;
             img {
-                object-fit: contain;
+                object-fit: cover;
                 width: 100%;
                 height: 100%;
             }

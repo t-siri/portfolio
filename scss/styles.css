@@ -3325,9 +3325,10 @@ footer {
     margin-right: calc(3 * 1rem); }
     @media (max-width: 600px) {
       .about header .about-image {
-        margin-right: calc(1.5 * 1rem); } }
+        margin-right: calc(1.5 * 1rem);
+        width: 6.55rem; } }
     .about header .about-image img {
-      object-fit: contain;
+      object-fit: cover;
       width: 100%;
       height: 100%; }
 .about h4 {
